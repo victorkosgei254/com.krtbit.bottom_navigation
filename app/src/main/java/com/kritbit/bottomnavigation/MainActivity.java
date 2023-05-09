@@ -11,7 +11,7 @@ import android.view.View;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 
-public class MainActivity extends AppCompatActivity implements  BottomNavigationView.OnNavigationItemSelectedListener{
+public class MainActivity extends AppCompatActivity implements  NavigationBarView.OnItemSelectedListener{
 
     BottomNavigationView bottomNavigationView;
 
@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity implements  BottomNavigation
         setContentView(R.layout.activity_main);
 
         bottomNavigationView = findViewById(R.id.bottomNavView);
-        bottomNavigationView.setOnNavigationItemSelectedListener(this);
+        bottomNavigationView.setOnItemSelectedListener(this);
         bottomNavigationView.setSelectedItemId(R.id.home);
 
     }
